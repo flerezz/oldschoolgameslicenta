@@ -1,0 +1,52 @@
+:root {
+    --g1: rgb(98, 0, 234);
+    --g2: rgb(236, 64, 122);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  body {
+    padding: 0px 300px;
+      animation: background-pan 10s linear infinite;
+      background: linear-gradient(
+        to right,
+        var(--g1),
+        var(--g2),
+        var(--g1)
+      );
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-size: 200%;
+  }
+
+    /* Stiluri pentru header */
+header {
+    display: flex;
+    justify-content: center; /* Centrează conținutul pe orizontală */
+    align-items: center; /* Centrează conținutul pe verticală */
+    height: auto; /* Înălțimea header-ului */
+  }
+  
+  .logo-link {
+    text-decoration: none; /* Elimină decorările de text */
+  }
+  
+  .logo-img {
+    width: 300px; /* Lățimea logo-ului */
+    height: 300px; /* Înălțimea logo-ului */
+    object-fit: cover; /* Păstrează raportul de aspect și umple cadrul */
+    padding-top: 20px;
+  }
+    
